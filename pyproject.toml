@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "moodle-quiz-archive-worker"
+version = "2.1.1"
+description = "Quiz archiver service to work in conjunction with the Moodle plugin 'quiz_archiver'"
+authors = ["Niels Gandraß <niels@gandrass.de>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0"
+playwright = "^1.44"
+requests = "^2.32"
+waitress = "^3.0"
+pypdf = {version = "^5.0", extras = ["image"]}
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest-timeout = "^2.3.1"
+pytest = "^8.0.0"
+coverage = "^7.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["archiveworker"]
