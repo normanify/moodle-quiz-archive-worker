@@ -1,4 +1,6 @@
 # moodle-quiz-archive-worker
+导现PDF的中文支持，解决导出PDF时的中文乱问题。
+
 
 [![Latest Version](https://img.shields.io/github/v/release/ngandrass/moodle-quiz-archive-worker)](https://github.com/ngandrass/moodle-quiz-archive-worker/releases)
 [![Docker Image Version (latest semver)](https://img.shields.io/docker/v/ngandrass/moodle-quiz-archive-worker/latest?label=Docker%20image)](https://hub.docker.com/r/ngandrass/moodle-quiz-archive-worker)
